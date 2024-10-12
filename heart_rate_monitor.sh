@@ -1,5 +1,12 @@
 #!/bin/bash
 #creating a script that returns heart information every second
+
+if [ "$BACKGROUND" != "true" ]; then
+    # Relaunch the script in the background by forking
+    BACKGROUND=true nohup "$0" &> /dev/null &
+    echo "The script is now running in the background"
+    exit 0
+fi
 echo "Enter the device name (e.g., Monitor_A, Monitor_B):"
 read device_name
 
