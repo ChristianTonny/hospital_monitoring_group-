@@ -1,17 +1,17 @@
 #!/bin/bash
 
-# Set the group number to 4
+#make 4 the group number
 GROUP_NUMBER="4"
 ARCHIVE_DIR="archived_logs_group$GROUP_NUMBER"
 REMOTE_USER="d428dceaebce"
 REMOTE_HOST="d428dceaebce.599ec69a.alu-cod.online"
 REMOTE_DIR="/hospital_monitoring_group-4/$REMOTE_USER"
 
-#Create the archive directory if it doesn't exist
+#if the archive directory doesn't already exist, create it.
 mkdir -p "$ARCHIVE_DIR"
 
 #Move all archived log files to the archive directory
-mv heart_rate_log.txt_20241012_123809 "$ARCHIVE_DIR/"
+mv *_archived.log  "$ARCHIVE_DIR/"
 
 
 #Backup the archive directory to the remote server
