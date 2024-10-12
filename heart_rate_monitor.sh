@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#creating a script that generates heart rate every second till stopped
 read -p "Enter the device name (e.g., Monitor_A): " device_name
 
 # Function to generate random heart rate between 40 and 120
