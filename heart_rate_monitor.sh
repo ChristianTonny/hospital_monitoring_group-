@@ -12,4 +12,4 @@ generate_heart_rate() {
         echo "$timestamp $device_name $heart_rate" >> heart_rate_log.txt
         sleep 1
     done
-) &}
+) &
