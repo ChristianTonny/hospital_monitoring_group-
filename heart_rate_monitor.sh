@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#creating a script that returns heart information every second
 echo "Enter the device name (e.g., Monitor_A, Monitor_B):"
 read device_name
 
