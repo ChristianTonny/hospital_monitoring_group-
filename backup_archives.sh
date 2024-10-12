@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Replace X with your group number
-GROUP_NUMBER="X"
+# Set the group number to 4
+GROUP_NUMBER="4"
 ARCHIVE_DIR="archived_logs_group$GROUP_NUMBER"
 REMOTE_USER="d428dceaebce"
 REMOTE_HOST="d428dceaebce.599ec69a.alu-cod.online"
