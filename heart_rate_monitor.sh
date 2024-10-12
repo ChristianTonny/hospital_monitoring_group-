@@ -13,6 +13,8 @@ generate_heart_rate() {
         sleep 1
     done
 ) &
+#storing process ID
+
 pid=$!
 
 # Display the process ID
