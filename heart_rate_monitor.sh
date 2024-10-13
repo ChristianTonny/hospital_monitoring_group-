@@ -16,7 +16,7 @@ generate_heart_rate() {
     done
 ) &
 
-# Storing process ID
+# Storing current process ID
 pid=$!
 
 # Display the current process ID
