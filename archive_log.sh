@@ -3,7 +3,7 @@
 # Get the current timestamp of the files
 timestamp=$(date +"%Y%m%d_%H%M%S")
 
-# Define the log file name
+# Define the name of the log file currently
 log_file="heart_rate_log.txt"
 
 # Define the new archived file name
