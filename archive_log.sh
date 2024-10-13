@@ -6,7 +6,7 @@ timestamp=$(date +"%Y%m%d_%H%M%S")
 log_file="heart_rate_log.txt"
 # eleborate the new archived file name
 archived_file="${log_file}_${timestamp}"
-# Rename the log file
+# Rename the current log file
 if mv "$log_file" "$archived_file"; then
     echo "Log file archived as: $archived_file"
 else
