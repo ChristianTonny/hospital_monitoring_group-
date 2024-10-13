@@ -24,7 +24,7 @@ echo "Heart rate monitoring started with PID: $pid"
 echo "To stop the monitoring, use: kill $pid"
 echo "To view the log in real-time, use: tail -f heart_rate_log.txt"
 
-# Wait for user input to stop the script
+# Wait for user input to stop the process
 read -p "Press Enter to stop the heart rate monitoring..."
 kill $pid
 echo "Heart rate monitoring stopped."
