@@ -9,7 +9,7 @@ log_file="heart_rate_log.txt"
 # Elaborate the new archived file name
 archived_file="${log_file}_${timestamp}"
 
-# Rename the log file
+# Rename the current log file
 mv "$log_file" "$archived_file"
 
 echo "Log file archived as: $archived_file"
