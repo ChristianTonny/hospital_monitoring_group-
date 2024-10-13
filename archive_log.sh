@@ -1,15 +1,15 @@
 #!/bin/bash
 
-# Get the current timestamp of the files
+# Get the current timestamp
 timestamp=$(date +"%Y%m%d_%H%M%S")
-
-# Define the name of the log file currently
+# Define the log file name
 log_file="heart_rate_log.txt"
-
-# Elaborate the new archived file name
+# Define the new archived file name
 archived_file="${log_file}_${timestamp}"
-
-# Rename the current log file
-mv "$log_file" "$archived_file"
-
-echo "Log file archived as: $archived_file"
+# Rename the log file
+if mv "$log_file" "$archived_file"; then
+    echo "Log file archived as: $archived_file"
+else
+    echo "Error: Failed to archive log file" >&2
+    exit 1
+fi	
