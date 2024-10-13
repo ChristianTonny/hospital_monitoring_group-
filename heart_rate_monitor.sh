@@ -19,7 +19,7 @@ generate_heart_rate() {
 # Storing process ID
 pid=$!
 
-# Display the process ID
+# Display the current process ID
 echo "Heart rate monitoring started with PID: $pid"
 echo "To stop the monitoring, use: kill $pid"
 echo "To view the log in real-time, use: tail -f heart_rate_log.txt"
