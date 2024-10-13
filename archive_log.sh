@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Get the current timestamp
+# Get the current real timestamp
 timestamp=$(date +"%Y%m%d_%H%M%S")
 # Define the log file name
 log_file="heart_rate_log.txt"
