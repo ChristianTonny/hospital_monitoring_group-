@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Get the current timestamp
+# Get the current timestamp of the files
 timestamp=$(date +"%Y%m%d_%H%M%S")
 
 # Define the log file name
