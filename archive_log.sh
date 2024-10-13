@@ -6,7 +6,7 @@ timestamp=$(date +"%Y%m%d_%H%M%S")
 # Define the name of the log file currently
 log_file="heart_rate_log.txt"
 
-# Define the new archived file name
+# Elaborate the new archived file name
 archived_file="${log_file}_${timestamp}"
 
 # Rename the log file
