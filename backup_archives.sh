@@ -11,7 +11,7 @@ REMOTE_DIR="/hospital_monitoring_group-4/$REMOTE_USER"
 mkdir -p "$ARCHIVE_DIR"
 
 #Move all archived log files to the archive directory
-mv *_archived.log  "$ARCHIVE_DIR/"
+find . -name "*_log.txt_*" -type f -exec mv {} "$ARCHIVE_DIR/" \;
 
 
 #Backup the archive directory to the remote server

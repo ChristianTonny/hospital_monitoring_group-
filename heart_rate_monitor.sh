@@ -4,7 +4,7 @@ read -p "Enter the device name (e.g., Monitor_A): " device_name
 
 # Function expression to generate random heart rate between 40 and 120
 generate_heart_rate() {
-    echo $((RANDOM % 81 + 40))
+    echo $((RANDOM % 40 + 60))
 }
 
 (
